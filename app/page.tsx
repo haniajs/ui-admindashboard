@@ -17,7 +17,7 @@ import { SignedIn, SignedOut, SignInButton, SignOutButton } from "@clerk/nextjs"
 import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 
-export default function(){
+const MyComponent = () => {
   const {user} = useUser()
   const router = useRouter()
 
@@ -43,3 +43,5 @@ export default function(){
     </div>
   )
 }
+
+export default MyComponent;
